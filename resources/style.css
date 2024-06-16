@@ -301,7 +301,7 @@ body {
 .question-pera {
   margin-left: auto;
   margin-right: auto;
-  max-width: 434px !important;
+  
   color: #000;
   margin-bottom: 4rem;
   text-wrap: wrap;
@@ -406,6 +406,12 @@ body {
   justify-content: center;
   align-items: center;
  
+}
+
+.flip-card-front img{
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 .flip-card-back {
@@ -639,16 +645,7 @@ h3 {
   text-align: -webkit-auto;
 }
 
-.border-before:before {
-  content: "";
-  border-top: 2px dashed red;
-  width: 32px;
-  display: inline-block;
-  position: absolute;
-  rotate: 90deg;
-  left: 42%;
-  top: 33%
-}
+
 
 
 
