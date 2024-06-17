@@ -918,12 +918,12 @@ h3 {
   max-width: 400px;
   font-family: 'Lato';
   font-weight: 400;
-  width: 100%; /* Ensure it takes full width */
+  width: 100%; 
 }
 
 .form-control,
 textarea {
-  width: 100%; /* Ensure inputs take full width */
+  width: 100%; 
   color: #000;
   letter-spacing: 1px;
   margin-bottom: 1rem;
@@ -933,7 +933,7 @@ textarea {
 .send-button {
   margin-top: 15px;
   height: 34px;
-  width: 100%; /* Ensure button takes full width */
+  width: 100%; 
   overflow: hidden;
   transition: all .2s ease-in-out;
   background-color: rgb(139, 139, 139);
@@ -947,9 +947,10 @@ textarea {
 }
 
 .alt-send-button {
-  width: 100%; /* Ensure button takes full width */
+  width: 100%; 
   height: 34px;
   transition: all .2s ease-in-out;
+  color: #fff;
 }
 
 .send-text {
@@ -965,7 +966,7 @@ textarea {
 
 .direct-contact-container {
   max-width: 400px;
-  width: 100%; /* Ensure it takes full width */
+  width: 100%; 
 }
 
 .contact-list {
@@ -978,6 +979,13 @@ textarea {
   line-height: 4;
   color: #aaa;
 }
+
+.form-left-img img{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
 
 .contact-text {
   font: 300 18px 'Lato', sans-serif;
@@ -1023,9 +1031,7 @@ textarea {
   padding: 0;
 }
 
-.social-media-list li a {
-  color: #fff;
-}
+
 
 .social-media-list li {
   position: relative;
@@ -1036,7 +1042,7 @@ textarea {
   line-height: 60px;
   border-radius: 50%;
   color: #fff;
-  background-color: rgb(139, 139, 139);
+  background-color: #fff;
   cursor: pointer;
   transition: all .2s ease-in-out;
 }
@@ -1059,6 +1065,7 @@ textarea {
   background-color: #d81956;
 }
 
+
 .social-media-list li:hover:after {
   opacity: 1;
   transform: scale(1.12);
@@ -1066,7 +1073,7 @@ textarea {
 }
 
 .social-media-list li:hover a {
-  color: #000;
+  color: #fff;
 }
 
 .copyright {
@@ -1139,7 +1146,232 @@ hr {
  /* contact us */
 
 
+/* footer */
+.btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.btn-primary span {
+  position: relative;
+}
+.btn-primary:before {
+  border-radius: 30px;
+  background: transparent;
+}
+.btn-primary:hover:before {
+  border-radius: 30px;
+  background: transparent;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+      width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+      width: 1170px;
+  }
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col-xs-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-sm-12 {
+      float: left;
+      width: 100%;
+  }
+  .col-sm-10 {
+      width: 83.33333333%;
+  }
+  .col-sm-offset-1 {
+      margin-left: 8.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-8 {
+      float: left;
+      width: 66.66666667%;
+  }
+  .col-md-offset-2 {
+      margin-left: 16.66666667%;
+  }
+}
+.section-heading-1 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 55px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.section-heading-1 p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.section-heading-1 h2 {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: #7367f0;
+}
+.section-heading-1 h2.white {
+  color: #ffffff;
+}
+.footer-1 {
+  padding-top: 120px;
+  position: relative;
+  background-color: #181721;
+}
+.footer-1 .social-icon-footer {
+  margin-top: 55px;
+}
+.footer-1 .social-icon-footer > li {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.footer-1 .social-icon-footer a {
+  color: #7367f0;
+  display: inline-block;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  font-size: 18px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+.footer-1 .social-icon-footer a:hover {
+  color: #fff !important;
+  background-image: linear-gradient(0deg, #ff6ba7 0%, #ff8765 100%) !important;
+  box-shadow: 0px 10px 20px 0px rgba(255, 255, 255, 0.15);
+}
+.fcopy {
+  margin-top: 100px;
+  padding: 20px 0;
+  font-size: 13px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+.newsletter-1 .newsletter-bg {
+  position: relative;
+  z-index: 1;
+}
+.newsletter-1 form {
+  display: flex;
+  justify-content: center;
+  
+}
+.newsletter-1 .form-control {
+  width: 100%;
+}
 
+.email-button {
+  
+  height: 34px;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+  background-color: rgb(139, 139, 139);
+  border-color: rgb(139, 139, 139);
+}
+
+
+.newsletter-1 input.form-control, .newsletter-1 input[type=email].form-control {
+  height: 55px;
+  line-height: 55px;
+  padding: 6px 20px;
+  background: #f1f2ff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
+  outline: none;
+  color: #000;
+  font-size: 16px;
+  transition: all 0.4s ease-in-out;
+}
+.newsletter-1 input.form-control:focus {
+  background: #e0e0e0;
+  outline: none;
+}
+.newsletter-1 button[type=submit] {
+  height: 55px;
+  line-height: 55px;
+  padding: 0 30px;
+  margin-left: 10px;
+  
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.email-send-button{
+  width: 100%;
+  height: 50px;
+  transition: all .2s ease-in-out;
+}
+
+.fa-arrow-right{
+  font-size: 1.2rem;
+}
+
+.email-send-button:hover{
+  transform: translate3d(-7px, -43px, 0px);
+}
+.newsletter-1 button[type=submit]:hover {
+  background: #d81956;
+}
+@media (max-width: 768px) {
+  .newsletter-1 form {
+      flex-direction: column;
+      align-items: stretch;
+  }
+  .newsletter-1 button[type=submit] {
+      margin-left: 0;
+      margin-top: 10px;
+      width: 100%;
+  }
+}
+
+
+
+/* footer */
 
 
  
