@@ -353,7 +353,7 @@ body {
 
 .flip-card {
   background-color: transparent;
-  width: 230px !important;
+  width: 300px !important;
   height: 400px;
   perspective: 1000px;
   margin: 0 auto;
@@ -361,7 +361,7 @@ body {
 
 .flip-card-front, .flip-card-back {
   position: absolute;
-  width: 230px !important;
+  width: 300px !important;
   height: 400px;
 }
 
