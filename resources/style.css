@@ -232,6 +232,11 @@ body {
 
   @media only screen and (max-width: 768px) {
     
+    .Journey {
+      margin-top: 10rem !important;
+      padding: 3rem 1rem 3rem 1rem;
+  }
+
     .navbar-nav{
       margin-top: 1rem;
     }
@@ -287,7 +292,7 @@ body {
 
 .question-pera {
   
-  max-width: 257px !important;
+  max-width: 360px !important;
   
   font-size: 1rem !important;
 }
@@ -499,6 +504,11 @@ h3 {
  /* feature */
  
  /* journey */
+
+ .Journey{
+  margin-top: 5rem;
+ }
+
  .jquery-title{
     font-size: 20px;
     font-family: Verdana, sans-serif;
