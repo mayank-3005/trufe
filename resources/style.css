@@ -233,9 +233,13 @@ body {
   @media only screen and (max-width: 768px) {
     
     .Journey {
-      margin-top: 10rem !important;
+      margin-top: 8rem !important;
       padding: 3rem 1rem 3rem 1rem;
   }
+
+  .right-content {
+    padding-top: 3rem !important;
+}
 
     .navbar-nav{
       margin-top: 1rem;
