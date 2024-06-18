@@ -6,7 +6,7 @@
       gsap.from(".navbar-nav .nav-item", {
         duration: 1,      
         opacity: 0,       
-        y: -50,          
+        y: -50,           
         stagger: 0.2,     
         ease: "bounce"    
       });
@@ -71,12 +71,7 @@ magneticArea.addEventListener('mouseleave', function(e){
 
 // toggle-nav-btn
 
-
-
-
 // hero-slider
-
-
 
 const textElements = document.querySelectorAll('.text');
 
@@ -88,21 +83,68 @@ function handleMouseMove(event) {
   const offsetX = event.offsetX;
   const offsetY = event.offsetY;
 
-  
+ 
   const xMovement = (offsetX / textElement.offsetWidth) - 0.5;
   const yMovement = (offsetY / textElement.offsetHeight) - 0.5;
 
-
+  
   gsap.to(textElements, {
-    duration: 0.1, 
-    ease: "elastic.out", 
-    rotate: xMovement * 5, 
+    duration: 0.1,
+    ease: "elastic.out",
+    rotate: xMovement * 5,
     scaleY: 1.05 + Math.abs(yMovement) * 0.1 
   });
-
-  // hero-slider
-
 }
+// cta btn
+const button = document.querySelector('.cta-btn');
+
+let boundingRect = button.getBoundingClientRect();
+
+window.addEventListener('resize', () => {
+  boundingRect = button.getBoundingClientRect();
+});
+
+button.addEventListener('mousemove', (e) => {
+  const mousePosX = e.clientX - boundingRect.left; 
+  const mousePosY = e.clientY - boundingRect.top;
+  gsap.to(button, {
+    x: (mousePosX - boundingRect.width / 1.2) * 0.1, 
+    y: (mousePosY - boundingRect.height / 1.2) * 0.1, 
+    duration: 0.8, 
+    ease: 'power3.out', 
+  });
+});
+
+button.addEventListener('mouseleave', () => {
+  gsap.to(button, {
+    x: 0, 
+    y: 0,
+    duration: 0.8, 
+    ease: 'elastic.out(1, 0.3)'
+  });
+}); 
+
+// hero-slider
+
+
+$(document).ready(function () {
+  const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+      },
+      keyboard: {
+          enabled: true,
+          onlyInViewport: true,
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+      },
+      effect: 'slide',
+  });
+});
 
 
 // form
@@ -127,6 +169,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
       }
   }
 
+  
   var email = document.getElementById('email');
   if (!email.checkValidity()) {
       formIsValid = false;
@@ -137,6 +180,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
       }
   }
 
+ 
   var message = document.querySelector('textarea[name="message"]');
   if (!message.checkValidity()) {
       formIsValid = false;
@@ -148,10 +192,11 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   }
 
   if (formIsValid) {
-      
       alert('Form submitted successfully.');
   }
 });
+
+   
 
     document.querySelector('#contact-form').addEventListener('submit', (e) => {
       e.preventDefault();
